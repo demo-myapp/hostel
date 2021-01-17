@@ -1,0 +1,11 @@
+https://developer.paypal.com/docs/checkout/
+https://api.jquery.com/
+https://getbootstrap.com/docs/4.0/components/modal/
+https://developer.paypal.com/docs/api/orders/v2/
+https://jasonday.github.io/printThis/
+https://tech.yandex.com/maps/jsapi/
+https://animate.style
+https://michalsnik.github.io/aos/
+http://fancybox.net
+https://www.w3schools.com/js/
+https://www.w3schools.com/jquery/

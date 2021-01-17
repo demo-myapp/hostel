@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tagihanku</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../assets/css/fontawesome/css/all.min.css">
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="../assets/css/adminlte/dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <!-- printThis plugin -->
+        <script src="../assets/js/jquery.printThis.js"></script>
+        <!-- Paypal API -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AWLKaGO8htzsmRRQbzXIPbGIMYadcM8ElODBMwjx3nrQQ2xmQQOFXxLlZvtDM6-rqfyRgtTlXAstoJqS&currency=USD"></script>
+
+    </head>
+    <body class="hold-transition layout-top-nav bg-light">
+        <div class="wrapper">
+            <nav class="main-header navbar navbar-expand-md navbar-primary navbar-dark">
+                <div class="container">
+                    <a href="/" class="navbar-brand">
+                        <span class="brand-text font-weight-light">Hostel</span>
+                    </a>
+                  
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- Right navbar links -->
+                    <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <main class="content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card text-white mt-5 shadow-sm p-3 mb-5 bg-white rounded">
+                                <div class="card-header">
+                                    <h2>Selamat Datang, <strong class="text-blue">User!</strong></h1>
+                                    <small>user@gmail.com</small>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-user fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Ubah Profil</h5>
+                                                </div>
+                                            </div>
+                                            <a href="index.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body bg-primary">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="card-link fas fa-list fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-link card-title"><strong>Tagihanku</strong></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-book fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Booking</h5>
+                                                </div>
+                                            </div>
+                                            <a href="booking.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-dollar-sign fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Riwayat Transaksi</h5>
+                                                </div>
+                                            </div>
+                                            <a href="riwayat.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-sign-out-alt fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Keluar</h5>
+                                                </div>
+                                            </div>
+                                            <a href="/" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card text-white mt-5 shadow-sm p-3 mb-5 bg-white rounded border-bottom border-primary">
+                                <div class="card-header text-center">
+                                    <a href="tagihan.html" class="float-left btn btn-primary">Kembali</a>
+                                    <h2 class="float-right"><strong class="text-primary">#</strong><strong id='idTagihan' class="text-primary"></strong></h2>
+                                </div>
+                                <div class="card-body" id='willPrinted'>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h3><strong id='namaHotel'></strong></h3>
+                                            <p>Check In <strong id='checkIn'></strong></p>
+                                            <p>Check Out <strong id='checkOut'></strong></p>
+                                            <p>Kamar <strong id='noKamar'></strong></p>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="text-right">
+                                                <h3><strong>Kepada</strong></h3>
+                                                <p id='namaPembayar'>User</p>
+                                                <p id='alamatJalan'></p>
+                                                <p id='alamatKota'></p>
+                                                <p id='kodePos'></p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <table class="table text-center">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Deskripsi</th>
+                                            <th scope="col">Banyaknya</th>
+                                            <th scope="col">Total</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td id='noBill'>1</td>
+                                                <td id='kamarBill'>Kamar VIP</td>
+                                                <td id='jumlahBill'>1</td>
+                                                <td>IDR <a id='hargaBill'></a></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td>Total</td>
+                                                <td><h4><strong>IDR</strong><strong id='totalBill'></strong></h4></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <button id='printB' class="btn btn-primary">Print</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Bayar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body text-center justify-content-center">
+                            <div class="btn" id='paypal-button-container'></div>
+                            <script>
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const getId = urlParams.get('id');
+                                var harga, namaHotel, desc, rates;
+    
+                                $.get("https://api.exchangeratesapi.io/latest?base=IDR", function(data, status){
+                                    rates = data.rates.USD;
+    
+                                    if(getId == '631734'){
+                                        harga = 400000;
+                                        namaHotel = 'Hotel Merapi';
+                                        desc = 'Hotel Merapi Nyaman'
+                                    } else if(getId == '762925'){
+                                        harga = 500000;
+                                        namaHotel = 'Hotel Merbabu';
+                                        desc = 'Hotel Merbabu Nyaman';
+                                    } else if(getId == '934173'){
+                                        harga = 300000;
+                                        namaHotel = 'Hotel Kelud';
+                                        desc = 'Hotel Kelud Nyaman';
+                                    } else {
+                                        alert('ID tidak ada');
+                                        window.location.replace("/");
+                                    }
+    
+                                    function IDRtoUSD(input){
+                                        let data = input*rates
+                                        return data.toFixed(2).toString();
+                                    }
+                                    
+                                    paypal.Buttons({
+                                        // Set up the transaction
+                                        createOrder: function(data, actions) {
+                                            return actions.order.create({
+                                                purchase_units: [{
+                                                    amount: {
+                                                        value: IDRtoUSD(harga),
+                                                    },
+                                                }]
+                                            });
+                                        },
+                                                    
+                                        // Finalize the transaction
+                                        onApprove: function(data, actions) {
+                                            return actions.order.capture().then(function(details) {
+                                                // Show a success message to the buyer
+                                                alert('Transaction ' + details.status + ' ' + details.payer.name.given_name + ' ' + details.payer.name.surname);
+                                            });
+                                        }
+                                                    
+                                    }).render('#paypal-button-container');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            const urlParams = new URLSearchParams(window.location.search);
+            const getId = urlParams.get('id');
+            
+            if(getId == '631734'){
+                document.getElementById('idTagihan').innerHTML = '631734';
+                document.getElementById('namaHotel').innerHTML = 'Hotel Merapi';
+                document.getElementById('checkIn').innerHTML = '12 / 09 / 2020';
+                document.getElementById('checkOut').innerHTML = '14 / 09/ 2020';
+                document.getElementById('noKamar').innerHTML = 'K - 12';
+                document.getElementById('namaPembayar').innerHTML = 'Budi';
+                document.getElementById('alamatJalan').innerHTML = 'Jln. Mawar No 21';
+                document.getElementById('alamatKota').innerHTML = 'Sleman, Yogyakarta, Indonesia';
+                document.getElementById('kodePos').innerHTML = '55211';
+                document.getElementById('noBill').innerHTML = '1';
+                document.getElementById('kamarBill').innerHTML = 'Kamar VIP';
+                document.getElementById('jumlahBill').innerHTML = '1';
+                document.getElementById('hargaBill').innerHTML = '400.000';
+                document.getElementById('totalBill').innerHTML = '400.000';
+            } else if(getId == '762925'){
+                document.getElementById('idTagihan').innerHTML = '762925';
+                document.getElementById('namaHotel').innerHTML = 'Hotel Merbabu';
+                document.getElementById('checkIn').innerHTML = '21 / 11 / 2020';
+                document.getElementById('checkOut').innerHTML = '22 / 11 / 2020';
+                document.getElementById('noKamar').innerHTML = 'MX-21';
+                document.getElementById('namaPembayar').innerHTML = 'Ando';
+                document.getElementById('alamatJalan').innerHTML = 'Jln. Anggrek No. 22';
+                document.getElementById('alamatKota').innerHTML = 'Sleman, Yogyakarta, Indonesia';
+                document.getElementById('kodePos').innerHTML = '55211';
+                document.getElementById('noBill').innerHTML = '1';
+                document.getElementById('kamarBill').innerHTML = 'Kamar MX-21';
+                document.getElementById('jumlahBill').innerHTML = '1';
+                document.getElementById('hargaBill').innerHTML = '500.000';
+                document.getElementById('totalBill').innerHTML = '500.000';
+            } else if(getId == '934173'){
+                document.getElementById('idTagihan').innerHTML = '934173';
+                document.getElementById('namaHotel').innerHTML = 'Hotel Kelud';
+                document.getElementById('checkIn').innerHTML = '25 / 01 / 2021';
+                document.getElementById('checkOut').innerHTML = '26 / 01 /2021';
+                document.getElementById('noKamar').innerHTML = 'KL - 30';
+                document.getElementById('namaPembayar').innerHTML = 'Rudi';
+                document.getElementById('alamatJalan').innerHTML = 'Jln. Kencana No. 40';
+                document.getElementById('alamatKota').innerHTML = 'Sleman, Yogyakarta, Indonesia';
+                document.getElementById('kodePos').innerHTML = '55211';
+                document.getElementById('noBill').innerHTML = '1';
+                document.getElementById('kamarBill').innerHTML = 'Kamar Biasa';
+                document.getElementById('jumlahBill').innerHTML = '1';
+                document.getElementById('hargaBill').innerHTML = '300.000';
+                document.getElementById('totalBill').innerHTML = '300.000';
+            } else {
+                alert('ID Tidak Di Temukan');
+                window.location.replace("/");
+            }
+
+            $('#printB').on('click',function(){
+                $('#willPrinted').printThis({
+                    importCSS: false,
+                    loadCSS: ['../assets/css/adminlte/dist/css/adminlte.min.css','../assets/css/fontawesome/css/all.min.css']
+                });
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

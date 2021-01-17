@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tinjau Pesanan</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/travel.svg" rel="icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Icon set -->
+  <link rel="stylesheet" href="assets/css/icofont.min.css">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Animasi -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- jquery -->
+  <script src="assets/js/jquery.min.js"></script>
+    
+  </head>
+  <body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto"><a href="home.html">Hostel</a></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="hubungi.html">Hubungi Kami</a></li>
+          <li><a href="register.html">Daftar Akun</a></li>
+          <li><a href="login.html">Masuk</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <div id="padding"></div>
+
+  <section class="services pt-1">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="row">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
+            <h4>Tinjau Pesanan Anda</h4>
+          <div class="icon-box">
+              <i><img src="assets/img/kamar 1.jpeg"></i>
+              <h4 id="namaKamar"></h4>
+              <div class="d-flex mb-1 flex-column">
+                <div class="d-flex">
+                 <div id="alamatHotel"></div>
+               </div>
+               <div class="d-flex">
+                 <div>Tanpa Sarapan . WiFi Gratis</div>
+               </div>
+               
+               </div>
+               <hr class="horizontalLine2">
+               <div class="d-flex mb-3 flex-column">
+                <div class="d-flex">
+                 <div>Check-in</div>
+                 <div class="ml-auto">Check-out</div>
+               </div>
+               <div class="d-flex">
+                 <div>12 Juni 2020</div>
+                 <div class="ml-auto">13 Juni 2020</div>
+               </div>
+               
+               </div>
+              
+          </div>
+
+              <div id="section2">
+              <h4>Detail Pemesan</h4>
+              <div class="icon-box">
+                <form id="reg_form">
+                  <div class="form-group">
+                    <label for="inputNama">Nama</label>
+                    <input type="text" name="name" class="form-control" id="formNama" placeholder="Masukkan nama lengkap anda">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputTelepon">Nomor Telepon</label>
+                    <input type="text" name="phone" class="form-control" id="formNama" placeholder="Gunakan format +62">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="text" name="email" class="form-control" id="formEmail"placeholder="Masukkan email anda">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputText">Permintaan Khusus</label>
+                    <textarea name="comment" class="form-control" id="formText" rows="3"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-warning">Submit & Bayar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <h4>Detail Harga</h4>
+            <div class="" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="d-flex mb-3 flex-column">
+                  <div class="d-flex">
+                  <div>Standard Double</div>
+                  <div class="ml-auto price" id="hargaKamar"></div>
+                </div>
+                <div class="d-flex">
+                  <div>Pajak & Lainnya</div>
+                  <div class="ml-auto price" id="pajakKamar"></div>
+                </div>
+                </div>
+                <hr class="horizontalLine">
+                <div class="d-flex mb-3">
+                  <div>Total pembayaran</div>
+                  <div class="ml-auto price" id="totalBayar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </div>
+</div>
+</section><!-- End Services Section -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 footer-contact">
+          <h4>Hostel</h4>
+          <div class="d-flex h5">
+            <div class="pr-4"><i class="icofont-brand-whatsapp"></i></div>
+            <div>Whatsapp<p>0812 333 221</p></div>
+          </div>
+          <div class="d-flex h5">
+            <div class="pr-4"><i class="icofont-email"></i></div>
+            <div>Email<p>cs@hostel.com</p></div>
+          </div>
+          <div class="d-flex h5">
+            <div class="pr-4"><i class="icofont-ui-call"></i></div>
+            <div>Call center<p>6221 6543 0008</p></div>
+          </div>
+        </div>
+
+        <div class="col-md-2 footer-links">
+          <h4>Tentang Hostel</h4>
+          <ul>
+            <li><i class="icofont-simple-right"></i> <a href="#">Cara Pesan</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Pusat Bantuan</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="about.html">Tentang Kami</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Karrier</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 footer-links">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><i class="icofont-simple-right"></i> <a href="#">Daftarkan Hotel</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Kebijakan Privasi</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Syarat Ketentuan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 footer-links">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><i class="icofont-facebook"></i><a href="#">Facebook</a></li>
+            <li><i class="icofont-twitter"></i><a href="#">Twitter</a></li>
+            <li><i class="icofont-instagram"></i><a href="#">Instagram</a></li>
+            <li><i class="icofont-youtube"></i><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 footer-links">
+          <h4>Download Hostel App</h4>
+          <div class="d-flex flex-column mb-3">
+            <div><img class="w-75 pb-2" src="assets/img/appstore.png"/></div>
+            <div><img class="w-75" src="assets/img/googleplay.png"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      Copyright &copy; 2020 DR. Hostel. All Rights Reserved
+    </div>
+    </div>
+
+  </div>
+</footer><!-- End Footer -->
+
+  <!-- JS Files -->
+  <script src="assets/js/bootstrapValidator.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        const urlParams = new URLSearchParams(window.location.search);
+        const getId = urlParams.get('id');
+        
+        if(getId == '150.000'){
+            document.getElementById('namaKamar').innerHTML = 'Malioboro Standard Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Dagen No.8, Sosromenduran, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '150.000';
+            document.getElementById('pajakKamar').innerHTML = 'FREE';
+            document.getElementById('totalBayar').innerHTML = '150.000';
+        } else if(getId == '192.000'){
+            document.getElementById('namaKamar').innerHTML = 'Malioboro Superior Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Dagen No.8, Sosromenduran, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '192.000';
+            document.getElementById('pajakKamar').innerHTML = 'FREE';
+            document.getElementById('totalBayar').innerHTML = '192.000';
+        } else if(getId == '390.000'){
+            document.getElementById('namaKamar').innerHTML = 'Alana Standard Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Palagan Tentara Pelajar Km. 7, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '390.000';
+            document.getElementById('pajakKamar').innerHTML = '20.000';
+            document.getElementById('totalBayar').innerHTML = '310.000';
+        } else if(getId == '410.000'){
+            document.getElementById('namaKamar').innerHTML = 'Alana Superior Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Palagan Tentara Pelajar Km. 7, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '410.000';
+            document.getElementById('pajakKamar').innerHTML = '20.000';
+            document.getElementById('totalBayar').innerHTML = '430.000';
+        } else if(getId == '350.000'){
+            document.getElementById('namaKamar').innerHTML = 'Tjokro Standard Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Affandi No.37, Karang Gayam, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '350.000';
+            document.getElementById('pajakKamar').innerHTML = '25.000';
+            document.getElementById('totalBayar').innerHTML = '375.000';
+        } else if(getId == '370.000'){
+            document.getElementById('namaKamar').innerHTML = 'Tjokro Superior Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Affandi No.37, Karang Gayam, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '370.000';
+            document.getElementById('pajakKamar').innerHTML = '25.000';
+            document.getElementById('totalBayar').innerHTML = '395.000';
+        } else if(getId == '800.000'){
+            document.getElementById('namaKamar').innerHTML = 'Indies Standard Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Prawirotaman No.3, Mergangsan, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '800.000';
+            document.getElementById('pajakKamar').innerHTML = '30.000';
+            document.getElementById('totalBayar').innerHTML = '830.000';
+        } else if(getId == '850.000'){
+            document.getElementById('namaKamar').innerHTML = 'Indies Superior Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Prawirotaman No.3, Mergangsan, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '850.000';
+            document.getElementById('pajakKamar').innerHTML = '30.000';
+            document.getElementById('totalBayar').innerHTML = '880.000';
+        } else if(getId == '210.000'){
+            document.getElementById('namaKamar').innerHTML = 'Yellow Standard Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Affandi No.27, Caturtunggal, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '210.000';
+            document.getElementById('pajakKamar').innerHTML = '10.000';
+            document.getElementById('totalBayar').innerHTML = '220.000';
+        } else if(getId == '230.000'){
+            document.getElementById('namaKamar').innerHTML = 'Yellow Superior Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Affandi No.27, Caturtunggal, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '230.000';
+            document.getElementById('pajakKamar').innerHTML = '10.000';
+            document.getElementById('totalBayar').innerHTML = '240.000';
+        } else if(getId == '195.000'){
+            document.getElementById('namaKamar').innerHTML = 'Sentana Standard Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Gowongan Lor No.65, Jetis, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '195.000';
+            document.getElementById('pajakKamar').innerHTML = 'FREE';
+            document.getElementById('totalBayar').innerHTML = '195.000';
+        } else if(getId == '220.000'){
+            document.getElementById('namaKamar').innerHTML = 'Sentana Superior Double';
+            document.getElementById('alamatHotel').innerHTML = 'Jl. Gowongan Lor No.65, Jetis, Yogyakarta';
+            document.getElementById('hargaKamar').innerHTML = '220.000';
+            document.getElementById('pajakKamar').innerHTML = 'FREE';
+            document.getElementById('totalBayar').innerHTML = '220.000';
+        } else {
+            alert('ID Tidak Di Temukan');
+            window.location.replace("/");
+        }
+
+    });
+</script>
+    
+  </body>
+</html>

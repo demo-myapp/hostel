@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Booking</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../assets/css/fontawesome/css/all.min.css">
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="../assets/css/adminlte/dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="../assets/js/jquery.min.js"></script>
+    </head>
+    <body class="hold-transition layout-top-nav bg-light">
+        <div class="wrapper">
+            <nav class="main-header navbar navbar-expand-md navbar-primary navbar-dark">
+                <div class="container">
+                    <a href="/" class="navbar-brand">
+                        <span class="brand-text font-weight-light">Hostel</span>
+                    </a>
+                  
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- Right navbar links -->
+                    <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card text-white mt-5 shadow-sm p-3 mb-5 bg-white rounded">
+                                <div class="card-header">
+                                    <h2>Selamat Datang, <strong class="text-blue">User!</strong></h1>
+                                    <small>user@gmail.com</small>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-user fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Ubah Profil</h5>
+                                                </div>
+                                            </div>
+                                            <a href="index.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="card-link fas fa-list fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-link card-title">Tagihanku</h5>
+                                                </div>
+                                                <a href="tagihan.html" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body bg-primary">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-book fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title"><strong>Booking</strong></h5>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-dollar-sign fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Riwayat Transaksi</h5>
+                                                </div>
+                                            </div>
+                                            <a href="riwayat.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-sign-out-alt fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Keluar</h5>
+                                                </div>
+                                            </div>
+                                            <a href="/" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card text-white mt-5 shadow-sm bg-white rounded border-bottom border-primary">
+                                <div class="card-header text-center">
+                                    <h2><strong class="text-blue ">Booking</strong></h1>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card bg-primary shadow-sm p-2 mb-5 rounded" style="width: 18rem;">
+                                        <img class="card-img-top" src="../assets/img/hotel-merapi.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h3 class="card-title"><strong>Hotel Merapi</strong></h3>
+                                            <p class="card-text">In : 12 / 06 / 2020</p>
+                                            <p class="card-text">Out : 14 / 06 / 2020</p>
+                                            <p class="card-text">Kamar : R-21</p>
+                                            <a id='btnDetail' href="" class="btn btn-warning">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('#btnDetail').click(function(){
+                $('#btnDetail').attr('href', '/dashboard/detail.html');
+            });
+        });
+    </script>
+</html>

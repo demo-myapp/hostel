@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hostel</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/travel.svg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icon set -->
+  <link href="assets/css/icofont.min.css" rel="stylesheet"> 
+  <!-- Animasi -->
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <!-- Animasi -->
+  <link href="assets/css/aos.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Jquery -->
+  <script src="assets/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto"><a href="home.html">Hostel</a></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="hubungi.html">Hubungi Kami</a></li>
+          <li><a href="register.html">Daftar Akun</a></li>
+          <li><a href="login.html">Masuk</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Welcome to <span>Hostel</span></h2>
+          <p class="animated fadeInUp">
+            Pesan hotel online kini menjadi semakin diminati lantaran prosesnya yang cepat dan tanpa ribet. Booking hotel murah menjadi semakin populer untuk dilakukan secara online, karena pemesan yang mencari hotel murah tersebut bisa melakukan booking dari jauh-jauh hari.
+          </p>
+          <a href="#" class="btn-get-started animated fadeInUp scrollto">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Booking Hotel dengan Cepat dan Mudah</h2>
+          <p class="animated fadeInUp">
+            Dengan pesan hotel online di tiket.com, kamu bisa memesan hotel di mana pun dan kapan pun kamu mau. Dengan pilihan hotel yang beragam, kamu bisa lebih mudah untuk mendapatkan hotel yang sesuai dengan kebutuhan dan bujet yang kamu miliki.
+          </p>
+          <a href="#" class="btn-get-started animated fadeInUp scrollto">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Mudah dan Harga Hotel Murah</h2>
+          <p class="animated fadeInUp">
+            hostel.info adalah pionir online travel agent di Indonesia yang bisa menjadi pilihan terbaik Anda untuk pesan hotel murah di berbagai kota favorit. Selain itu, hostel.info juga memiliki fitur spesial untuk Anda yang ingin pesan hotel online.
+          </p>
+          <a href="#" class="btn-get-started animated fadeInUp scrollto">Selengkapnya</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg" data-aos="fade-up">
+            <div class="icon-box">
+              <h4 class="title">Hey, Kamu</h4>
+              <h1 class="title">Mau nginep dimana?</h1>
+
+              <div class="form-search-wrap mb-5" data-aos="fade-up" data-aos-delay="200">
+                <form method="post">
+                  <div class="row align-items-center">
+                    
+                    <div class="col-lg-12 col-xl-4 no-sm-border border-right">
+                      <div class="wrap-icon">
+                        <span class="icon icofont-location-pin"></span>
+                        <input type="text" id="lokasihotel" class="form-control" placeholder="Masukkan Lokasi yang dituju">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-3 no-sm-border border-right">
+                      <div class="wrap-icon">
+                      <input type="text" onfocus="(this.type='date')" id="datecheckin" class="form-control" placeholder="Check-in">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-3 no-sm-border border-right">
+                      <div class="wrap-icon">
+                        <input type="text" onfocus="(this.type='date')" id="datecheckout"class="form-control" placeholder="Check-out">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-2 no-sm-border">
+                      <div class="wrap-icon">
+                        <span class="icon icofont-bed"></span>
+                      <input type="text" id="jumlahkamar" class="form-control" placeholder="Jumlah">
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </form>
+              </div>
+
+              <div class="text-right">
+                <a id="ccarikamararikamar"><input type="submit" class="btn btn-primary" value="Cari Kamar"></a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Icon Boxes Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pelayanan</h2>
+          <p>Hostel memberikan banyak kemudahan bagi setiap pengguna. terbaik dan berbeda dari yang lainnya.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="icofont-5-star-hotel"></i>
+              <h4>Pilihan Hotel Terbaik</h4>
+              <p>Menginap di dalam atau luar negeri akan terasa nyaman. Banyak pilihan hotel terbaik buat kamu!</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-left" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="icofont-travelling"></i>
+              <h4>Proses Booking Simpel</h4>
+              <p>proses booking hotel simple seakan mengerti kamu banget. Semua hanya dengan sentuhan jari.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-right" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="icofont-pay"></i>
+              <h4>Pembayaran Mudah</h4>
+              <p>Dengan metode pembayaran yang sangat beragam, memudahkan kamu dalam pemesanan dan pembayaran hotel.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-left" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="icofont-hotel"></i>
+              <h4>Dijamin Check-in!</h4>
+              <p>Pesan hotel check-in. Customer Care akan membantu kamu untuk bisa check-in di hotel terbaik pilihan kamu.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-right" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="icofont-sale-discount"></i>
+              <h4>Banyak Promo Hotel</h4>
+              <p>Banyak beragam promo yang bisa kamu nikmati dengan booking hotel murah di hostel.info. Ayoo jangan kehabisan.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-left" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="icofont-hotel-boy-alt"></i>
+              <h4>Customer Care 24/7</h4>
+              <p>Ada kendala saat proses pemesanan dan pembayaran hotel? Customer Care siap membantu kamu 24 jam!.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-3 footer-contact">
+            <h4>Hostel</h4>
+            <div class="d-flex h5">
+              <div class="pr-4"><i class="icofont-brand-whatsapp"></i></div>
+              <div>Whatsapp<p>0812 333 221</p></div>
+            </div>
+            <div class="d-flex h5">
+              <div class="pr-4"><i class="icofont-email"></i></div>
+              <div>Email<p>cs@hostel.com</p></div>
+            </div>
+            <div class="d-flex h5">
+              <div class="pr-4"><i class="icofont-ui-call"></i></div>
+              <div>Call center<p>6221 6543 0008</p></div>
+            </div>
+          </div>
+
+          <div class="col-md-2 footer-links">
+            <h4>Tentang Hostel</h4>
+            <ul>
+              <li><i class="icofont-simple-right"></i> <a href="#">Cara Pesan</a></li>
+              <li><i class="icofont-simple-right"></i> <a href="#">Pusat Bantuan</a></li>
+              <li><i class="icofont-simple-right"></i> <a href="about.html">Tentang Kami</a></li>
+              <li><i class="icofont-simple-right"></i> <a href="#">Karrier</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 footer-links">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><i class="icofont-simple-right"></i> <a href="#">Daftarkan Hotel</a></li>
+              <li><i class="icofont-simple-right"></i> <a href="#">Kebijakan Privasi</a></li>
+              <li><i class="icofont-simple-right"></i> <a href="#">Syarat Ketentuan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 footer-links">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><i class="icofont-facebook"></i><a href="#">Facebook</a></li>
+              <li><i class="icofont-twitter"></i><a href="#">Twitter</a></li>
+              <li><i class="icofont-instagram"></i><a href="#">Instagram</a></li>
+              <li><i class="icofont-youtube"></i><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-links">
+            <h4>Download Hostel App</h4>
+            <div class="d-flex flex-column mb-3">
+              <div><img class="w-75 pb-2" src="assets/img/appstore.png"/></div>
+              <div><img class="w-75" src="assets/img/googleplay.png"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        Copyright &copy; 2020 DR. Hostel. All Rights Reserved
+      </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="icofont-arrow-up"></button>
+
+  <script>
+    
+    // fungsi ketika user men scroll ke bawah 30 px maka tombol back to top akan muncul
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // fungsi ketika user meng klik tombol back to top maka halaman akan menscroll ke atas 
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <!-- JS Files -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#carikamar').click(function(){
+        window.location.href = `/hasil_pencarian.html?loc=${$('#lokasihotel').val()}&checkin=${$('#datecheckin').val()}&checkout=${$('#datecheckout').val()}&jk=${$('#jumlahkamar').val()}`;
+      });
+    });
+  </script>
+
+</body>
+</html>

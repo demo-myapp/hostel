@@ -1,0 +1,9 @@
+Cara Melakukan Virtual Pembayaran Dengan Sandbox Paypal
+1. Ketika menekan tombol bayar, maka inputkan email dan password dibawah ini.
+Email : hostel.pay@business.example.com
+Password : ij9<y.LW
+
+2. Untuk mengecek apakah pembayaran masuk atau tidak, dapat di cek melalui sandbox.paypal.com.
+3. Akses sandbox.paypal.com, setelah itu masukkan email dan password dibawah.
+Email : siva.cahya45@personal.example.com
+Password : 2i4yQ$6M

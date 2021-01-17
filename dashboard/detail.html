@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Booking</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../assets/css/fontawesome/css/all.min.css">
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="../assets/css/adminlte/dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <!-- Paypal API -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AWLKaGO8htzsmRRQbzXIPbGIMYadcM8ElODBMwjx3nrQQ2xmQQOFXxLlZvtDM6-rqfyRgtTlXAstoJqS&currency=USD"></script>
+    </head>
+    <body class="hold-transition layout-top-nav bg-light">
+        <div class="wrapper">
+            <nav class="main-header navbar navbar-expand-md navbar-primary navbar-dark">
+                <div class="container">
+                    <a href="/" class="navbar-brand">
+                        <span class="brand-text font-weight-light">Hostel</span>
+                    </a>
+                  
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- Right navbar links -->
+                    <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card text-white mt-5 shadow-sm p-3 mb-5 bg-white rounded">
+                                <div class="card-header">
+                                    <h2>Selamat Datang, <strong class="text-blue">User!</strong></h1>
+                                    <small>user@gmail.com</small>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-user fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Ubah Profil</h5>
+                                                </div>
+                                            </div>
+                                            <a href="index.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="card-link fas fa-list fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-link card-title">Tagihanku</h5>
+                                                </div>
+                                                <a href="tagihan.html" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body bg-primary">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-book fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title"><strong>Booking</strong></h5>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-dollar-sign fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Riwayat Transaksi</h5>
+                                                </div>
+                                            </div>
+                                            <a href="riwayat.html" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-lg-2">
+                                                    <i class="fas fa-sign-out-alt fa-lg"></i>
+                                                </div>
+                                                <div class="col-lg-10">
+                                                    <h5 class="card-title">Keluar</h5>
+                                                </div>
+                                            </div>
+                                            <a href="/" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card text-white mt-5 shadow-sm bg-white rounded border-bottom border-primary">
+                                <div class="card-header text-center mt-2">
+                                    <a href='booking.html' class="float-left btn btn-primary">Kembali</a>
+                                    <h2 class="float-right"><strong class="text-primary">Booking</strong> Hotel Merapi</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img class="img-fluid" src="../assets/img/hotel-merapi.jpg">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h3 class="text-primary"><strong>Hotel Merapi</strong></h3>
+                                            <h4>Check In</h4>
+                                            <p>12 / 09 / 2020</p>
+                                            <h4>Check Out</h4>
+                                            <p>14 / 09 / 2020</p>
+                                            <h4>Pajak</h4>
+                                            <p>0%</p>
+                                            <h4>Tagihan</h4>
+                                            <p>IDR 400.000</p>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+                                                Bayar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-center justify-content-center">
+                    <div class="btn" id='paypal-button-container'></div>
+                    <script>
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const getId = urlParams.get('id');
+                        var rates;
+
+                        $.get("https://api.exchangeratesapi.io/latest?base=IDR", function(data, status){
+                            rates = data.rates.USD;
+
+                            function IDRtoUSD(input){
+                                let data = input*rates
+                                return data.toFixed(2).toString();
+                            }
+                            
+                            paypal.Buttons({
+                                // Set up the transaction
+                                createOrder: function(data, actions) {
+                                    return actions.order.create({
+                                        purchase_units: [{
+                                            amount: {
+                                                value: IDRtoUSD(400000),
+                                            },
+                                        }]
+                                    });
+                                },
+                                            
+                                // Finalize the transaction
+                                onApprove: function(data, actions) {
+                                    return actions.order.capture().then(function(details) {
+                                        // Show a success message to the buyer
+                                        alert('Transaction ' + details.status + ' ' + details.payer.name.given_name + ' ' + details.payer.name.surname);
+                                    });
+                                }
+                                            
+                            }).render('#paypal-button-container');
+                        });
+                    </script>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

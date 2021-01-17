@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hasil Pencarian</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/travel.svg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icon set -->
+  <link href="assets/css/icofont.min.css" rel="stylesheet"> 
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto"><a href="home.html">Hostel</a></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="hubungi.html">Hubungi Kami</a></li>
+          <li><a href="register.html">Daftar Akun</a></li>
+          <li><a href="login.html">Masuk</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <div id="padding"></div>
+
+    <div class="container">
+        <div class="icon-box">
+          <div class="col-md-6 col-lg">
+            <div class="form-search-wrap">
+              <form method="post">
+                <div class="row align-items-center">
+                  
+                  <div class="col-lg-12 col-xl-3 no-sm-border border-right">
+                    <div class="wrap-icon">
+                      <span class="icon icofont-location-pin"></span>
+                      <input type="text" id='lokasihotel' class="form-control" placeholder="Lokasi">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-3 no-sm-border border-right">
+                    <div class="wrap-icon">
+                    <input type="text" id='checkinhotel' onfocus="(this.type='date')" id="date" class="form-control" placeholder="Check-in">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-3 no-sm-border border-right">
+                    <div class="wrap-icon">
+                    <input type="text" id='checkouthotel' onfocus="(this.type='date')" id="date"class="form-control" placeholder="Check-out">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-2 no-sm-border">
+                    <div class="wrap-icon ">
+                      <span class="icon icofont-bed"></span>
+                    <input type="text" id='jumlahkamar' class="form-control" placeholder="Jumlah">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-1 no-sm-border text-right p-0">
+                    <input type="submit" id='cari' class="btn btn-primary" value="Cari">
+                  </div>
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <section class="sorting">
+        <div class="container">
+          <div class="col-md-9 float-right">
+    <div>
+      <div class="d-flex justify-content-end">
+        <div class="pr-3 bd-highlight align-self-center">Urut Berdasarkan : </div>
+        <div class="bd-highlight">
+          <select class="price-sorting custom-select custom-select-sm" name="price-sorting">
+            <option selected disabled>Default</option>
+            <option value="l2h">Harga Terendah</option>
+            <option value="h2l">Harga Tertinggi</option>
+          </select>
+        </div>
+    </div>
+  </div>
+</div>
+</section><!-- End Services Section -->
+
+    <section class="services pt-1">
+        <div class="container">
+
+          <div class="col-md-3 float-left">
+            <div class="maps">
+              <a class="img-2 d-flex" data-toggle="modal" data-target="#modal1" style="background-image: url(assets/img/maps.png);">
+              </a>
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe src="yandex_maps.html" width="770" height="600"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+    
+              <div class="icon-box">
+                <h4 class="title3">Fasilitas</h4>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">WiFi</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Kolam Renang</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">Ruang Rapat</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Fitness</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck5">
+                  <label class="custom-control-label" for="customCheck5">Restoran</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck6">
+                  <label class="custom-control-label" for="customCheck6">Elevator</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck7">
+                  <label class="custom-control-label" for="customCheck7">Layanan 24 Jam</label>
+                </div>
+              </div>
+
+          </div>
+
+      <div class="products-grid col-md-9 float-right">
+
+
+          <div class="product" data-price="150.000" >
+              <div class="icon-box">
+                  <i><img src="assets/img/kamar 1.jpeg"></i>
+                  <h4><a href="#"></a>Hotel Malioboro</a></h4>
+                  <div class="d-flex bd-highlight">
+                    <div class="flex-grow-1 bd-highlight">Gondokusuman, Yogyakarta</div>
+                    <div class="bd-highlight loc">Harga Per Malam</div>
+                  </div>
+                  <div class="d-flex bd-highlight ident">
+                    <div class="bd-highlight"><h4 class="ml-0">ECO</h4></div>
+                    <div class="flex-grow-1 bd-highlight"><h4>SYARIAH</h4></div>
+                    <div class="bd-highlight"><a type="submit" class="btn btn-warning btn-xs" href="detail_hotel.html?id=150000">150.000</a></div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="product" data-price="390.000">
+                <div class="icon-box">
+                  <i><img src="assets/img/kamar 2.jpeg"></i>
+                  <h4><a href="#"></a>The Alana Hotel</a></h4>
+                  <div class="d-flex bd-highlight">
+                    <div class="flex-grow-1 bd-highlight">Mantrijeron, Yogyakarta</div>
+                    <div class="bd-highlight loc">Harga Per Malam</div>
+                  </div>
+                  <div class="d-flex bd-highlight ident">
+                    <div class="flex-grow-1 bd-highlight"><h4>ECO</h4></div>
+                    <div class="bd-highlight"><a type="submit" class="btn btn-warning btn-xs" href="detail_hotel.html?id=390000">390.000</a></div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="product" data-price="350.000">
+                <div class="icon-box">
+                  <i><img src="assets/img/kamar 3.jpeg"></i>
+                  <h4><a href="#"></a>Grand Tjokro</a></h4>
+                  <div class="d-flex bd-highlight">
+                    <div class="flex-grow-1 bd-highlight">Gondokusuman, Yogyakarta</div>
+                    <div class="bd-highlight loc">Harga Per Malam</div>
+                  </div>
+                  <div class="d-flex bd-highlight ident">
+                    <div class="bd-highlight"><h4 class="ml-0">ECO</h4></div>
+                    <div class="flex-grow-1 bd-highlight"><h4>SYARIAH</h4></div>
+                    <div class="bd-highlight"><a type="submit" class="btn btn-warning btn-xs" href="detail_hotel.html?id=350000">350.000</a></div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="product" data-price="800.000">
+              <div class="icon-box">
+                  <i><img src="assets/img/kamar 4.jpeg"></i>
+                  <h4><a href="#"></a>Indies Heritage</a></h4>
+                  <div class="d-flex bd-highlight">
+                    <div class="flex-grow-1 bd-highlight">Prawirotaman, Yogyakarta</div>
+                    <div class="bd-highlight loc">Harga Per Malam</div>
+                  </div>
+                  <div class="d-flex bd-highlight ident">
+                    <div class="bd-highlight"><h4 class="ml-0">ECO</h4></div>
+                    <div class="flex-grow-1 bd-highlight"><h4>SYARIAH</h4></div>
+                    <div class="bd-highlight"><a type="submit" class="btn btn-warning btn-xs" href="detail_hotel.html?id=800000">800.000</a></div>
+                  </div>
+                </div>
+          </div>
+
+        <div class="product" data-price="210.000">
+          <div class="icon-box">
+              <i><img src="assets/img/kamar 4.jpeg"></i>
+              <h4><a href="#"></a>Yellow Star</a></h4>
+              <div class="d-flex bd-highlight">
+                <div class="flex-grow-1 bd-highlight">Gejayan, Yogyakarta</div>
+                <div class="bd-highlight loc">Harga Per Malam</div>
+              </div>
+              <div class="d-flex bd-highlight ident">
+                <div class="bd-highlight"><h4 class="ml-0">ECO</h4></div>
+                <div class="flex-grow-1 bd-highlight"><h4>SYARIAH</h4></div>
+                <div class="bd-highlight"><a type="submit" class="btn btn-warning btn-xs" href="detail_hotel.html?id=210000">210.000</a></div>
+              </div>
+              </div>
+          </div>
+
+          <div class="product" data-price="195.000">
+            <div class="icon-box">
+                <i><img src="assets/img/kamar 4.jpeg"></i>
+                <h4><a href="#"></a>Griya Sentana</a></h4>
+                <div class="d-flex bd-highlight">
+                  <div class="flex-grow-1 bd-highlight">Jetis, Yogyakarta</div>
+                  <div class="bd-highlight loc">Harga Per Malam</div>
+                </div>
+                <div class="d-flex bd-highlight ident">
+                  <div class="flex-grow-1 bd-highlight"><h4>SYARIAH</h4></div>
+                  <div class="bd-highlight"><a type="submit" class="btn btn-warning btn-xs" href="detail_hotel.html?id=195000">195.000</a></div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+
+</div>
+</section><!-- End Services Section -->
+
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 footer-contact">
+          <h4>Hostel</h4>
+          <div class="d-flex h5">
+            <div class="pr-4"><i class="icofont-brand-whatsapp"></i></div>
+            <div>Whatsapp<p>0812 333 221</p></div>
+          </div>
+          <div class="d-flex h5">
+            <div class="pr-4"><i class="icofont-email"></i></div>
+            <div>Email<p>cs@hostel.com</p></div>
+          </div>
+          <div class="d-flex h5">
+            <div class="pr-4"><i class="icofont-ui-call"></i></div>
+            <div>Call center<p>6221 6543 0008</p></div>
+          </div>
+        </div>
+
+        <div class="col-md-2 footer-links">
+          <h4>Tentang Hostel</h4>
+          <ul>
+            <li><i class="icofont-simple-right"></i> <a href="#">Cara Pesan</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Pusat Bantuan</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="about.html">Tentang Kami</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Karrier</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 footer-links">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><i class="icofont-simple-right"></i> <a href="#">Daftarkan Hotel</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Kebijakan Privasi</a></li>
+            <li><i class="icofont-simple-right"></i> <a href="#">Syarat Ketentuan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 footer-links">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><i class="icofont-facebook"></i><a href="#">Facebook</a></li>
+            <li><i class="icofont-twitter"></i><a href="#">Twitter</a></li>
+            <li><i class="icofont-instagram"></i><a href="#">Instagram</a></li>
+            <li><i class="icofont-youtube"></i><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 footer-links">
+          <h4>Download Hostel App</h4>
+          <div class="d-flex flex-column mb-3">
+            <div><img class="w-75 pb-2" src="assets/img/appstore.png"/></div>
+            <div><img class="w-75" src="assets/img/googleplay.png"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      Copyright &copy; 2020 DR. Hostel. All Rights Reserved
+    </div>
+    </div>
+
+  </div>
+</footer><!-- End Footer -->
+
+</div>
+<div id="loading"></div>
+
+  <script>
+    function onReady(callback) {
+      var intervalID = window.setInterval(checkReady, 1000);
+
+      function checkReady() {
+          if (document.getElementsByTagName('body')[0] !== undefined) {
+              window.clearInterval(intervalID);
+              callback.call(this);
+            }
+          }
+        }
+
+    function show(id, value) {
+        document.getElementById(id).style.display = value ? 'block' : 'none';
+    }
+
+    onReady(function () {
+        show('page', true);
+        show('loading', false);
+    });
+    </script>
+
+  <!-- JS Files -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/price-sorting.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- get URL param -->
+  <script>
+    $(document).ready(function(){
+      const urlParams = new URLSearchParams(window.location.search);
+      const getLoc = urlParams.get('loc');
+      const getCheckIn = urlParams.get('checkin');
+      const getCheckOut = urlParams.get('checkout');
+      const jumlahKamar = urlParams.get('jk');
+
+      if(getLoc != '' || getLoc != null){
+        $('#lokasihotel').val(getLoc);
+        $('#checkinhotel').val(getCheckIn);
+        $('#checkouthotel').val(getCheckOut);
+        $('#jumlahkamar').val(jumlahKamar);
+      } else {
+        $('#lokasihotel').val('');
+        $('#checkinhotel').val('');
+        $('#checkouthotel').val('');
+        $('#jumlahkamar').val('');
+      }
+    });
+  </script>
+
+</body>
+</html>
